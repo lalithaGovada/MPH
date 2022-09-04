@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mph.consumer.MessageConsumerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-04T22:30:44" hostname="DESKTOP-JE2N6JM" time="0.12">
+  <properties/>
+  <testcase name="testConsumerMultipleMessages()" classname="com.mph.consumer.MessageConsumerTest" time="0.12"/>
+  <system-out><![CDATA[23:30:40.143 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:30:40.157 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:30:40.206 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mph.consumer.MessageConsumerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:30:40.223 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mph.consumer.MessageConsumerTest], using SpringBootContextLoader
+23:30:40.227 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mph.consumer.MessageConsumerTest]: class path resource [com/mph/consumer/MessageConsumerTest-context.xml] does not exist
+23:30:40.228 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mph.consumer.MessageConsumerTest]: class path resource [com/mph/consumer/MessageConsumerTestContext.groovy] does not exist
+23:30:40.228 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mph.consumer.MessageConsumerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:30:40.229 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mph.consumer.MessageConsumerTest]: MessageConsumerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:30:40.278 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mph.consumer.MessageConsumerTest]
+23:30:40.360 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Lalitha\Lalitha_WorkSpace_JAVA\mph\build\classes\java\main\com\mph\MphApplication.class]
+23:30:40.361 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mph.MphApplication for test class com.mph.consumer.MessageConsumerTest
+23:30:40.504 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mph.consumer.MessageConsumerTest]: using defaults.
+23:30:40.505 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:30:40.529 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@33352f32, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5f3b9c57, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e044120, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2cf23c81, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3624da92, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35fe2125, org.springframework.test.context.transaction.TransactionalTestExecutionListener@94f6bfb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34645867, org.springframework.test.context.event.EventPublishingTestExecutionListener@2484f433, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@60b71e8f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1255b1d1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@464649c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c22d4f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5f59185e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60bdf15d]
+23:30:40.534 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4ef27d66 testClass = MessageConsumerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@362a019c testClass = MessageConsumerTest, locations = '{}', classes = '{class com.mph.MphApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@142269f2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55322aab, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f0e9815, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@35229f85, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@75f95314, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@4fb3ee4e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.3)
+
+2022-09-04 23:30:40.933  INFO 5720 --- [    Test worker] com.mph.consumer.MessageConsumerTest     : Starting MessageConsumerTest using Java 17.0.4 on DESKTOP-JE2N6JM with PID 5720 (started by admin in C:\Lalitha\Lalitha_WorkSpace_JAVA\mph)
+2022-09-04 23:30:40.935  INFO 5720 --- [    Test worker] com.mph.consumer.MessageConsumerTest     : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 23:30:43.647  INFO 5720 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9200]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-mph-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = mph-group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-09-04 23:30:43.876  INFO 5720 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-04 23:30:43.877  INFO 5720 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-04 23:30:43.878  INFO 5720 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662330643873
+2022-09-04 23:30:43.882  INFO 5720 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Subscribed to topic(s): mph-topic
+2022-09-04 23:30:43.927  INFO 5720 --- [    Test worker] com.mph.consumer.MessageConsumerTest     : Started MessageConsumerTest in 3.344 seconds (JVM running for 4.819)
+2022-09-04 23:30:44.401  INFO 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Node -1 disconnected.
+2022-09-04 23:30:44.411  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Connection to node -1 (localhost/127.0.0.1:9200) could not be established. Broker may not be available.
+2022-09-04 23:30:44.411  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Bootstrap broker localhost:9200 (id: -1 rack: null) disconnected
+2022-09-04 23:30:44.505  INFO 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Node -1 disconnected.
+2022-09-04 23:30:44.505  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Connection to node -1 (localhost/127.0.0.1:9200) could not be established. Broker may not be available.
+2022-09-04 23:30:44.505  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Bootstrap broker localhost:9200 (id: -1 rack: null) disconnected
+2022-09-04 23:30:44.616  INFO 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Node -1 disconnected.
+2022-09-04 23:30:44.616  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Connection to node -1 (localhost/127.0.0.1:9200) could not be established. Broker may not be available.
+2022-09-04 23:30:44.617  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Bootstrap broker localhost:9200 (id: -1 rack: null) disconnected
+2022-09-04 23:30:44.825  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - process (message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001
+107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002
+108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002
+109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100
+110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110)
+2022-09-04 23:30:44.826  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : process - message conversion starting
+2022-09-04 23:30:44.826  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convert (message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001
+107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002
+108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002
+109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100
+110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110)
+2022-09-04 23:30:44.827  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convertToObj (message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001)
+2022-09-04 23:30:44.831  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : commission processed for message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001, bid = 1.1, ask = 1.3
+2022-09-04 23:30:44.832  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convertToObj (message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001)
+2022-09-04 23:30:44.832  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convertToObj (message = 107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002)
+2022-09-04 23:30:44.832  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : commission processed for message = 107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002, bid = 119.5, ask = 120.0
+2022-09-04 23:30:44.833  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convertToObj (message = 107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002)
+2022-09-04 23:30:44.833  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convertToObj (message = 108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002)
+2022-09-04 23:30:44.833  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : commission processed for message = 108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002, bid = 1.2, ask = 1.31
+2022-09-04 23:30:44.833  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convertToObj (message = 108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002)
+2022-09-04 23:30:44.833  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convertToObj (message = 109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100)
+2022-09-04 23:30:44.834  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : commission processed for message = 109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100, bid = 1.2, ask = 1.31
+2022-09-04 23:30:44.834  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convertToObj (message = 109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100)
+2022-09-04 23:30:44.834  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : START - convertToObj (message = 110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110)
+2022-09-04 23:30:44.834  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : commission processed for message = 110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110, bid = 119.6, ask = 119.92
+2022-09-04 23:30:44.835  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convertToObj (message = 110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110)
+2022-09-04 23:30:44.835  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - convert (message = 106,EUR/USD,1.1000,1.2000,01-06-2020 12:01:01:001
+107,EUR/JPY,119.60,119.90,01-06-2020 12:01:02:002
+108,GBP/USD,1.2500,1.2560,01-06-2020 12:01:02:002
+109,GBP/USD,1.2499,1.2561,01-06-2020 12:01:02:100
+110,EUR/JPY,119.61,119.91,01-06-2020 12:01:02:110)
+2022-09-04 23:30:44.835  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : process - processed messages size = 5
+2022-09-04 23:30:44.835  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : process - saving processed messages
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao saveOrUpdate
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao changeCompare
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao changeCompare
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : PriceDao - no existing record found
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao saveOrUpdate
+2022-09-04 23:30:44.836  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao saveOrUpdate
+2022-09-04 23:30:44.837  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao changeCompare
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : PriceDao - no existing record found
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao saveOrUpdate
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao saveOrUpdate
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao changeCompare
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : PriceDao - no existing record found
+2022-09-04 23:30:44.842  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao saveOrUpdate
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao saveOrUpdate
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao changeCompare
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : PriceDao - no existing record found
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao saveOrUpdate
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao saveOrUpdate
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : START - PriceDao changeCompare
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : PriceDao - no existing record found
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.dao.PriceDao                     : END - PriceDao saveOrUpdate
+2022-09-04 23:30:44.843  INFO 5720 --- [    Test worker] com.mph.helper.MessageProcessHelper      : END - process
+Test case I - search by Instrument Name =EUR/JPY id=110
+Ask = 119.92
+Bid = 119.6
+Test case II - search by Instrument Name =GBP/USD id=109
+Ask = 1.31
+Bid = 1.2
+ ~~~  Test case III - get all messages ~~~
+ InstrumentName=EUR/USD id=106
+Ask = 1.3
+Bid = 1.1
+ InstrumentName=EUR/JPY id=107
+Ask = 120.0
+Bid = 119.5
+ InstrumentName=GBP/USD id=108
+Ask = 1.31
+Bid = 1.2
+ InstrumentName=GBP/USD id=109
+Ask = 1.31
+Bid = 1.2
+ InstrumentName=EUR/JPY id=110
+Ask = 119.92
+Bid = 119.6
+2022-09-04 23:30:44.863  INFO 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Node -1 disconnected.
+2022-09-04 23:30:44.864  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Connection to node -1 (localhost/127.0.0.1:9200) could not be established. Broker may not be available.
+2022-09-04 23:30:44.864  WARN 5720 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-mph-group1-1, groupId=mph-group1] Bootstrap broker localhost:9200 (id: -1 rack: null) disconnected
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
